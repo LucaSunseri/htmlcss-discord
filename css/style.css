@@ -23,13 +23,19 @@ body {
   clear: both;
 }
 
-.btn{
+.btn {
+  display: inline-block;
   font-size: 14px;
   color: black;
   padding: 10px 15px;
   background-color: white;
   text-decoration: none;
   border-radius: 40px;
+}
+
+.btn.vaiolet {
+  background-color: #8ea1e2;
+  color: white;
 }
 
 /**********HEADER**********/
@@ -122,11 +128,14 @@ header nav ul li a:hover{
 }
 
 /**********MAIN**********/
-section.container{
-  margin-bottom: 100px;
+section {
+  margin-bottom: 25px;
+}
+section:nth-of-type(2), section:nth-of-type(4) {
+  background-color: #f6f6f6;
 }
 
- /* clearfix */
+ /* layout clearfix */
 .img-main, .text-main {
   float: left;
 }
@@ -146,6 +155,7 @@ section.container{
 .text-main.text-left {
   margin-right: 15%;  
 }
+ /* /layout clearfix */
 
 /* image and text */
 .img-main img {
@@ -157,6 +167,10 @@ section.container{
 }
 
 /* section four */
+section:nth-of-type(4) {
+  margin-bottom: 5px;
+}
+
 section:nth-of-type(4) .position-center {
   text-align: center;
 }
@@ -165,20 +179,79 @@ section:nth-of-type(4) img {
   width: 100%;
 }
 
-
-.btn.vaiolet{
-  background-color: #8ea1e2;
-  color: white;
+main .btn.vaiolet{
+  padding: 10px 20px;
+  margin: 10px;
 }
 
 section:nth-of-type(4) .back h2{
   background-image: url(../img/stars.svg);
   margin: 0 auto;
   background-size: contain;
-  margin-bottom: 50px;
 }
 
 /**********FOOTER**********/
 footer {
   background-color: #23272a;
+  padding: 50px 0;
 }
+
+ /* layout clearfix */
+footer section, aside {
+  float: left;
+}
+
+footer section {
+  width: 30%;
+}
+
+footer aside {
+  width: calc(70%/4);
+}
+ /* /layout clearfix */
+
+/* text  */
+footer h2, footer aside li:first-child {
+  color: #7289da;
+}
+
+footer aside li:first-child {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer li {
+  list-style-type: none;
+  padding: 2px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
+/* line end with logo e button */
+.footer-bottom {
+  border-top: 2px solid #526192;
+  margin-top: 25px;
+  padding: 25px 0;
+}
+
+footer .btn.vaiolet{
+  padding: 10px 15px;
+}
+
+/* clearfix */
+.footer-bottom div:first-child {
+  float: left;
+}
+
+.footer-bottom div:last-child {
+  float: right;
+}
+

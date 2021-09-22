@@ -79,7 +79,6 @@ header nav ul li a:hover{
 /**********JUMBOTRON**********/
 
 .jumbotron{
-  position: relative;
   height: 500px;
   background-image: url('../img/jumbo.png');
   background-size: cover;
@@ -87,11 +86,9 @@ header nav ul li a:hover{
 }
 
 .jumbotron .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 60%;
+  margin: 0 auto;
+  padding-top: 100px;
   text-align: center;
   color: white;
 }
@@ -125,11 +122,13 @@ header nav ul li a:hover{
 }
 
 /**********MAIN**********/
+section.container{
+  margin-bottom: 100px;
+}
 
  /* clearfix */
 .img-main, .text-main {
   float: left;
-  margin-bottom: 50px;
 }
 
 .img-main {
@@ -158,19 +157,25 @@ header nav ul li a:hover{
 }
 
 /* section four */
-section:nth-of-type(3) {
-  margin-bottom: 300px;
+section:nth-of-type(4) .position-center {
+  text-align: center;
 }
 
-main section:nth-of-type(4) {
-  position: relative;
+section:nth-of-type(4) img {
+  width: 100%;
 }
 
-.position-center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+.btn.vaiolet{
+  background-color: #8ea1e2;
+  color: white;
+}
+
+section:nth-of-type(4) .back h2{
+  background-image: url(../img/stars.svg);
+  margin: 0 auto;
+  background-size: contain;
+  margin-bottom: 50px;
 }
 
 /**********FOOTER**********/

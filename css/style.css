@@ -137,7 +137,8 @@ header nav ul li a:hover{
 main section {
   margin-bottom: 25px;
 }
-section:nth-child(even) {
+
+main section:nth-child(even) {
   background-color: #f6f6f6;
 }
 

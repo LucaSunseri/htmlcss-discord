@@ -196,6 +196,8 @@ footer {
   padding: 50px 0;
 }
 
+/* top footer */
+
  /* layout clearfix */
 footer section, aside {
   float: left;
@@ -208,16 +210,10 @@ footer section {
 footer aside {
   width: calc(70%/4);
 }
- /* /layout clearfix */
 
-/* text  */
+/* general */
 footer h2, footer aside li:first-child {
   color: #7289da;
-}
-
-footer aside li:first-child {
-  font-size: 14px;
-  font-weight: bold;
 }
 
 footer li {
@@ -226,6 +222,7 @@ footer li {
 }
 
 footer a {
+  display: inline-block;
   color: white;
   text-decoration: none;
   font-size: 14px;
@@ -235,7 +232,31 @@ footer a:hover{
   text-decoration: underline;
 }
 
-/* line end with logo e button */
+/* section */
+footer span {
+  color: white;
+  font-size: 14px;
+}
+
+footer section img {
+  width: 10%;
+  vertical-align: middle;
+  margin: 15px 0;
+}
+
+footer section li {
+  display: inline-block;
+  padding: 5px;
+  font-size: 10px;
+}
+
+/* aside */
+footer aside li:first-child {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* button footer */
 .footer-bottom {
   border-top: 2px solid #526192;
   margin-top: 25px;
@@ -246,12 +267,11 @@ footer .btn.vaiolet{
   padding: 10px 15px;
 }
 
-/* clearfix */
-.footer-bottom div:first-child {
+.footer-bottom a:first-child {
   float: left;
 }
 
-.footer-bottom div:last-child {
+.footer-bottom a:last-child {
   float: right;
 }
 

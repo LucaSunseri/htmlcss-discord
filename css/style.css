@@ -1,0 +1,158 @@
+/**********GLOBAL**********/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 20px;
+  color: #23272a;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.clearfix::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.btn{
+  font-size: 14px;
+  color: black;
+  padding: 10px 15px;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 40px;
+}
+
+/**********HEADER**********/
+
+header {
+  background-color: #3161E0;
+  padding: 20px 0;
+}
+
+.logo img {
+  width: 100%;
+}
+
+#accedi {
+  text-align: right;
+}
+
+.logo, header nav, #accedi {
+  float: left;
+}
+
+.logo, #accedi {
+  width: 10%;
+}
+
+header nav {
+  width: 80%;
+  text-align: center;
+}
+
+header nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header nav ul li a:hover{
+  text-decoration: underline;
+}
+
+/**********JUMBOTRON**********/
+
+.jumbotron{
+  position: relative;
+  height: 500px;
+  background-image: url('../img/jumbo.png');
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.jumbotron .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  text-align: center;
+  color: white;
+}
+
+.jumbotron h1{
+  font-size: 53px;
+  margin-bottom: 40px;
+}
+
+.jumbotron p{
+  margin-bottom: 30px;
+  line-height: 35px;
+}
+
+.jumbotron .btn:first-of-type{
+  margin-right: 20px;
+}
+
+.btn.big{
+  font-size: 18px;
+  padding: 15px 20px;
+}
+
+.btn.black{
+  background-color: black;
+  color: white;
+}
+
+.btn:hover{
+  color:cornflowerblue;
+}
+
+/**********MAIN**********/
+
+ /* clearfix */
+.img-main, .text-main {
+  float: left;
+  margin-bottom: 50px;
+}
+
+.img-main {
+  width: 60%;
+}
+
+.text-main {
+  width: 25%;
+}
+
+.text-main.text-right {
+  margin-left: 15%;  
+}
+
+.text-main.text-left {
+  margin-right: 15%;  
+}
+
+/* image and text */
+.img-main img {
+  width: 100%;  
+}
+
+.text-main {
+  padding-top: 30px;
+}
